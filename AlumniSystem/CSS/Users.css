@@ -1,0 +1,373 @@
+/* CATEGORICAL */
+
+.headerText{
+    font-family: Times;
+    font-size: 2.7vh;
+    color: rgb(85,139,47);
+    text-align: left;
+    margin-top: 20px;
+    float: left;
+}
+
+
+
+
+/* CONTENT CSS */
+
+.userbody{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    background-position: sticky;
+    background-attachment: fixed;
+    background-image: url('../../images/user_bg_2.jpg');
+    background-size: cover;
+}
+
+.NavBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(28,31,34);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: solid rgb(157,144,27) 4px;
+}
+
+.NavBarlogo{
+    display: flex;
+    align-items: left;
+    padding: 0;
+    margin-top: -1vh;
+}
+
+.logo-img{
+    margin: 2.5vh 0 0 1vw;   
+    width: 7vh;
+    height: 7vh;
+}
+
+.NavBarlogoText{
+    margin-left: 1vh;
+}
+
+.nav-links{
+    display: flex;
+    position:relative;
+    margin-right: 5vh;
+}
+
+.moreIMG{
+    margin-top: 1.5vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+}
+
+.moreIMG:hover{
+    background-color: rgb(56, 60, 62);
+}
+
+.notifs{
+    margin: 2.5vh 1vw 0 0;
+    background-color: rgb(71,111,48);
+    width: fit-content;
+    height: fit-content;
+    padding: 1vh 1vw 1vh 1vw;
+    border: solid whitesmoke 1px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+/* MAIN BODY TERRITORY */
+.mainCard{
+    position: absolute;
+    top: 70vh;
+    width: 100vw;
+    min-height: 50vh;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28,31,34);
+    align-items:center;
+
+}
+
+.cardNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    color: rgb(71,111,48);
+    font-family: Times;
+    font-size: 4vh;
+    border-top: solid rgb(157,144,27) 4px;
+    margin-bottom: -1vh;
+}
+
+.cardNavText{
+    width: 32vw;
+    padding: 1vh 0 2vh 0;
+    text-align: center;
+}
+
+.cardNav :hover{
+    background-color: rgb(41, 44, 46);
+}
+
+.hrDefault{
+    color: rgb(157,144,27);
+}
+
+.ContentBox{
+    background-color: rgb(94,96,101);
+    color: whitesmoke;
+    font-family: Times;
+    font-size: 2.5vh;
+    width: 91vw;
+    padding: 2vh 2vw;
+    height: fit-content;
+    min-height: 20vh;
+    margin: 2vh 2.5vw;
+}
+
+.Ann h2{
+    margin-bottom: 5px;
+}
+
+.Ann p{
+    margin: 3px;
+}
+
+.socIcon{
+    width: 4vh;
+    height: 4vh;
+}
+
+
+
+
+
+
+/* INFO BAR */
+.InfoBar{
+    display: none;
+    position: fixed;
+    top: 12vh;
+    max-width: 12vw;
+    right: 2vh;
+    background-color: rgb(28,31,34);
+    color: whitesmoke;
+    padding: 3vh;
+}
+
+.UserInfo{
+    display: flex;
+}
+
+.userInfoBarIcon{
+    width: 6vh;
+    height: 6vh;
+    margin: 0 1vw 0 0;
+}
+
+.UserBars{
+    justify-content: center;
+    text-align: center;
+}
+
+.profileBar{
+    width: 12vw;
+    height: 6vh;
+    padding: 2vh 0 2vh 0;
+    justify-content: center;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 0;
+
+}
+
+.profileBar:hover{
+    background-color: rgb(83, 88, 91);
+}
+
+/* NOTIF BAR */
+.NotifBar{
+    display: none;
+    position: fixed;
+    top: 12vh;
+    width: 30vw;
+    height: 50vh;
+    overflow-y: scroll;
+    right: 2vh;
+    background-color: rgb(28,31,34);
+    color: whitesmoke;
+    padding: 3vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(61, 62, 63);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+.NotifText{
+    width: 28vw;
+    height: 4vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(28,31,34);
+    border-bottom: solid rgb(83, 88, 91) 1px;
+}
+
+.NotifText:hover{
+    background-color: rgb(83, 88, 91);
+}
+
+h2{
+    margin: 0.5vh;
+}
+
+.LogoutPopup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 10vh;
+    padding: 2.5vh 2vw 2.5vh 2vw;
+    background-color: #202122;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block; 
+    z-index: 1000; 
+    font-size: 3vh;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.LogoutButton{
+    background-color: rgb(106, 110, 103);
+    color: whitesmoke;
+    font-family: Times;
+    font-size: 2.5vh;
+    width: 7vw;
+    height: 4.5vh;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+.LogoutYes:hover{
+    background-color: rgb(130, 52, 48);
+}
+
+/* Toggle Switch*/
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    float: right;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  /* Toggle ON */
+  .toggle-switch input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  .toggle-switch input:checked + .slider::before {
+    transform: translateX(22px);
+  }
+  
+  /* Toggle Switch End*/
+
+  .SettingPopup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 43vh;
+    padding: 2.5vh 2vw 2.5vh 2vw;
+    background-color: #202122;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.603);
+    display: block; 
+    z-index: 10000000; 
+    font-size: 3vh;
+    color: whitesmoke;
+    text-align: left;
+    display: none;
+}
+
+.SettingPopup div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.SettingButton{
+    background-color: rgb(106, 110, 103);
+    color: whitesmoke;
+    font-family: Times;
+    font-size: 2.5vh;
+    width: 8vw;
+    height: 4.5vh;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10vh 6vw 0 6vw;
+    bottom: 0;
+    position: bottom;
+}
